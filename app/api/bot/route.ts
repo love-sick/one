@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-export async function POST(request) {
+export async function POST(request: NextRequest) {
   const { TELEGRAM_BOT_TOKEN } = process.env;
 
   if (!TELEGRAM_BOT_TOKEN) {
