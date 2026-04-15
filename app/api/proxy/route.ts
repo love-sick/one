@@ -42,7 +42,6 @@ export async function GET(req: NextRequest) {
       return Response.json(data);
     }
 
-    // متن معمولی
     const text = await response.text();
     return new Response(text, {
       headers: {
